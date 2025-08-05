@@ -6,7 +6,7 @@ namespace packagesPersona {
     public class Estudiante : Persona
 {
         private string codeE;
-        private string namecarreraE;
+        private string nameCarreraE;
 
         public Estudiante()
         {
@@ -16,10 +16,11 @@ namespace packagesPersona {
             :base(nameP, mailP, dirP)
         {
             this.codeE = codeE;
-            this.namecarreraE = namecarreraE;
+            this.nameCarreraE = namecarreraE;
         }
 
         public string CodeE { get => codeE; set => codeE = value; }
-        public string NamecarreraE { get => namecarreraE; set => namecarreraE = value; }
+        public string NamecarreraE { get => nameCarreraE; set => nameCarreraE = value; }
+        public string NameCarreraE { get; internal set; }
     }
 }
